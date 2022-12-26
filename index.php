@@ -15,5 +15,19 @@
 		echo $result['result']['NAME'].' '.$result['result']['LAST_NAME'];
 		?>
 	</div>
+	<script>
+		BX24.callMethod(
+			"crm.lead.get", 
+			{ id: 8 }, 
+			function(result) {
+				if(result.error()){
+					console.error(result.error());
+				}
+				else{
+					console.dir(result.data());
+				}
+			}
+		);	
+	</script>
 </body>
 </html>
