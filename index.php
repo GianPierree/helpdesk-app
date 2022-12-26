@@ -13,15 +13,16 @@
 </head>
 <body>
 	<div id="name">
-		<p class="h1">Helpdesk:</p>
+		<p class="h1 m-2">Helpdesk:</p>
+		<!-- <br> -->
 		<div id="header">
-			<div class="row">
+			<div class="row m-2">
 				<div class="col align-self-end">
 					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#crearTicket">Crear ticket</button>
 				</div>
 			</div>
-			<br><br>
-			<div class="row g-2">
+			<!-- <br> -->
+			<div class="row g-2 m-2">
 				<div class="col">
 					<div class="form-floating">
 						<input type="text" class="form-control" id="floatingInputGrid" placeholder="" value="">
