@@ -1,6 +1,14 @@
 <?php
 
-writeToLog($_REQUEST, 'Log');
+require_once("./functions/Bitrix24.php");
+$b24 = new Bitrix24;
+
+$hook = "https://gianpierree2.bitrix24.es/rest/1/nihvsjtpzestwb94";
+
+$leadId = $_REQUEST["data"]["FIELDS"]["ID"];
+$leadData = $b24->leadGet($hook, $leadId);
+
+writeToLog($leadData, 'Log');
 
 
 /**
