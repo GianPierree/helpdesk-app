@@ -24,7 +24,7 @@
 	<div id="name">
 		<p class="h1 m-2">Helpdesk <i class="fas fa-user-headset"></i></p>
 		<?php
-		require_once("./views/header.php");
+			require_once("./views/header.php");
 		?>
 		<div id="workarea"></div>
 	</div>
@@ -43,20 +43,23 @@
 			// 		}
 			// 	}
 			// );	
-			BX24.callMethod(
-				'user.get', 
-				{"ACTIVE": true}, 
-				function(result) {
-					if(result.error()){
-						console.error(result.error());
-					}
-					else{
-						console.dir(result.data());
-					}
-				}
-			);
+			// BX24.callMethod(
+			// 	'user.get', 
+			// 	{"ACTIVE": true}, 
+			// 	function(result) {
+			// 		if(result.error()){
+			// 			console.error(result.error());
+			// 		}
+			// 		else{
+			// 			console.dir(result.data());
+			// 		}
+			// 	}
+			// );
 		});
 	</script>
+
+	<!-- Helpers -->
+	<script src="./helpers/users.js"></script>
 
 	<!-- Bootstrap -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
