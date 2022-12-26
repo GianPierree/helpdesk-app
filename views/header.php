@@ -1,9 +1,7 @@
 <?php 
 require_once("./config.php");
 $contactData = $b24->contactList($hook);
-echo "<pre>"; print_r($contactData); echo "</pre>";
-
-
+// echo "<pre>"; print_r($contactData); echo "</pre>";
 ?>
 <div id="header">
     <div class="row m-2">
