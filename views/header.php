@@ -36,9 +36,9 @@ $contactData = $b24->contactList($hook);
                         <select class="form-select" id="inputGroup-sizing-contact">
                             <option selected>Seleccionar...</option>
                             <?php
-                                for($i=0; $i<count($contact["result"]); $i++){
-                                    $id = $contact["result"][$i]["ID"];
-                                    $nombre = $contact["result"][$i]["NAME"] + " " + $contact["result"][$i]["LAST_NAME"];
+                                for($i=0; $i < count($contactData["result"]); $i++){
+                                    $id = $contactData["result"][$i]["ID"];
+                                    $nombre = $contactData["result"][$i]["NAME"] + " " + $contactData["result"][$i]["LAST_NAME"];
                                     ?>
                                         <option value="<?=$id?>"><?=$nombre?></option>
                                     <?php
