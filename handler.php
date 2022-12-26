@@ -5,11 +5,18 @@ $b24 = new Bitrix24;
 
 $hook = "https://gianpierree2.bitrix24.es/rest/1/nihvsjtpzestwb94";
 
-$leadId = $_REQUEST["data"]["FIELDS"]["ID"];
-$leadData = $b24->leadGet($hook, $leadId);
-
 writeToLog($_REQUEST, 'Log');
 
+if($_REQUEST["event"] == "ONCRMLEADADD"){
+    $leadId = $_REQUEST["data"]["FIELDS"]["ID"];
+    $leadData = $b24->leadGet($hook, $leadId);
+    writeToLog($_REQUEST, 'Wook creado desde el Módulo de desarrolladores');
+}elseif($_REQUEST["document_id"][1] == "CCrmDocumentLead"){
+    $leadIdArr = explode("_", $_REQUEST["document_id"][2]);
+    $leadId = $leadIdArr[1];
+    $leadData = $b24->leadGet($hook, $leadId);
+    writeToLog($_REQUEST, 'Wook creado desde un BP');
+}
 
 /**
  * Write data to log file.
