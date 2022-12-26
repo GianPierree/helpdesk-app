@@ -1,5 +1,6 @@
 <?php 
 require_once("./config.php");
+$contactData = $b24->contactList($hook);
 ?>
 <div id="header">
     <div class="row m-2">
@@ -15,12 +16,6 @@ require_once("./config.php");
             </div>
         </div>
     </div>
-    <pre>
-        <?php
-        $contactData = $b24->contactList($hook);
-        echo print_r($contactData); 
-        ?>
-    </pre>
 
     <!-- Modal -->
     <div class="modal fade" id="crearTicket" tabindex="-1" aria-labelledby="crearTicketLabel" aria-hidden="true">
@@ -40,6 +35,15 @@ require_once("./config.php");
                         <span class="input-group-text" for="inputGroup-sizing-contact">Contacto</span>
                         <select class="form-select" id="inputGroup-sizing-contact">
                             <option selected>Seleccionar...</option>
+                            <?php
+                                for($i=0; $i<count($contact["result"]); $i++){
+                                    $id = $contact["result"][$i]["ID"];
+                                    $nombre = $contact["result"][$i]["NAME"] + " " + $contact["result"][$i]["LAST_NAME"];
+                                    ?>
+                                        <option value="<?=$id?>"><?=$nombre?></option>
+                                    <?php
+                                }
+                            ?>
                         </select>
                     </div>
                     <div class="input-group mb-3">
