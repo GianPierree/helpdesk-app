@@ -13,14 +13,22 @@
 </head>
 <body>
 	<div id="name">
-		<div class="row g-2">
-			<div class="col">
-				<div class="form-floating">
-					<input type="text" class="form-control" id="floatingInputGrid" placeholder="" value="">
-					<label for="floatingInputGrid">Buscar ticket</label>
+		<div id="header">
+			<div class="row g-2">
+				<div class="col align-self-end">
+					<button type="button" class="btn btn-primary">Crear ticket</button>
+				</div>
+			</div>
+			<div class="row g-2">
+				<div class="col">
+					<div class="form-floating">
+						<input type="text" class="form-control" id="floatingInputGrid" placeholder="" value="">
+						<label for="floatingInputGrid">Buscar ticket</label>
+					</div>
 				</div>
 			</div>
 		</div>
+		<div id="workarea"></div>
 	</div>
 	<script>
 		BX24.init(function(){
