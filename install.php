@@ -15,9 +15,9 @@ if($result['rest_only'] === false):?>
 	</head>
 	<body>
 		<?php if($result['install'] == true):?>
-			installation has been finished 261222
+			Intalación correcta. 
 		<?php else:?>
-			installation error
+			Instalación con errores. 
 		<?php endif;?>
 	</body>
 <?php endif;
