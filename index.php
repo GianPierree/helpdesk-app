@@ -45,7 +45,7 @@
 			// );	
 			BX24.callMethod(
 				'user.get', 
-				{"ID": 1}, 
+				{"ACTIVE": true}, 
 				function(result) {
 					if(result.error()){
 						console.error(result.error());
