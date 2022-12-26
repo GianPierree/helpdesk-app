@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>App 2612</title>
+	<script src="//api.bitrix24.com/api/v1/dev/"></script>
 </head>
 <body>
 	<div id="name">
