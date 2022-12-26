@@ -13,10 +13,11 @@
 </head>
 <body>
 	<div id="name">
+		<p class="h1">Helpdesk:</p>
 		<div id="header">
 			<div class="row">
 				<div class="col align-self-end">
-					<button type="button" class="btn btn-primary">Crear ticket</button>
+					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#crearTicket">Crear ticket</button>
 				</div>
 			</div>
 			<br><br>
@@ -28,6 +29,26 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- Modal -->
+			<div class="modal fade" id="crearTicket" tabindex="-1" aria-labelledby="crearTicketLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="crearTicketLabel">Crear Ticket:</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						Formulario crear ticket. 
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+						<button type="button" class="btn btn-primary">Crear</button>
+					</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 		<div id="workarea"></div>
 	</div>
