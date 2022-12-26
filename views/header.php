@@ -45,7 +45,6 @@ $contactData = $b24->contactList($hook);
                                     <?php
                                 }
                             ?>
-                            
                         </select>
                     </div>
                     <div class="input-group mb-3">
