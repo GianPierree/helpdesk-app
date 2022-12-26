@@ -14,9 +14,11 @@
 <body>
 	<div id="name">
 		<div id="header">
-			<div class="row g-2">
-				<div class="col align-self-end">
-					<button type="button" class="btn btn-primary">Crear ticket</button>
+			<div class="container text-center">
+				<div class="row">
+					<div class="col align-self-end">
+						<button type="button" class="btn btn-primary">Crear ticket</button>
+					</div>
 				</div>
 			</div>
 			<div class="row g-2">
