@@ -14,7 +14,7 @@
 <body>
 	<div id="name">
 		<div id="header">
-			<div class="container text-center">
+			<div class="container">
 				<div class="row">
 					<div class="col align-self-end">
 						<button type="button" class="btn btn-primary">Crear ticket</button>
