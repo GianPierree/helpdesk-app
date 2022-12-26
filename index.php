@@ -19,7 +19,7 @@
 		<p class="h1 m-2">Helpdesk:</p>
 		<div id="header">
 			<div class="row m-2">
-				<div class="col align-self-end">
+				<div class="col text-end">
 					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#crearTicket"><i class="fas fa-plus"></i> Crear ticket</button>
 				</div>
 			</div>
