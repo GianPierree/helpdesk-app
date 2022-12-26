@@ -19,6 +19,7 @@
 					<button type="button" class="btn btn-primary">Crear ticket</button>
 				</div>
 			</div>
+			<br><br>
 			<div class="row g-2">
 				<div class="col">
 					<div class="form-floating">
