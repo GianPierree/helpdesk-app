@@ -26,7 +26,7 @@ $contactData = $b24->contactList($hook);
                 <h1 class="modal-title fs-5" id="crearTicketLabel">Crear Ticket:</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <form action="">
+            <form action="./ticket.php" method="POST">
                 <div class="modal-body">
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="inputGroup-sizing-name">Nombre</span>
@@ -55,7 +55,7 @@ $contactData = $b24->contactList($hook);
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary">Crear</button>
+                    <button type="submit" class="btn btn-primary">Crear</button>
                 </div>
             </form> 
             </div>
