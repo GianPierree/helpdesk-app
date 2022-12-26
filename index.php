@@ -16,7 +16,7 @@
 </head>
 <body>
 	<div id="name">
-		<p class="h1 m-2">Helpdesk:</p>
+		<p class="h1 m-2">Helpdesk <i class="fad fa-headset"></i></p>
 		<div id="header">
 			<div class="row m-2">
 				<div class="col text-end">
