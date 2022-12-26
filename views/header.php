@@ -49,11 +49,7 @@ $contactData = $b24->contactList($hook);
                     </div>
                     <div class="input-group mb-3">
                         <span class="input-group-text" for="inputGroup-sizing-responsable">Responsable</span>
-                        <select class="form-select" id="inputGroup-sizing-responsable">
-                            <option selected>Choose...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                        <select class="form-select" id="inputGroup-sizing-responsable">                            
                         </select>
                     </div>
                 </div>

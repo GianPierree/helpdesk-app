@@ -29,33 +29,7 @@
 		<div id="workarea"></div>
 	</div>
 	<script>
-		BX24.init(function(){
-			// console.log('Init done!', BX24.isAdmin());
-			// BX24.callMethod(
-			// 	"crm.lead.get", 
-			// 	{ id: 8 }, 
-			// 	function(result) {
-			// 		if(result.error()){
-			// 			console.error(result.error());
-			// 		}
-			// 		else{
-			// 			console.dir(result.data());
-			// 		}
-			// 	}
-			// );	
-			// BX24.callMethod(
-			// 	'user.get', 
-			// 	{"ACTIVE": true}, 
-			// 	function(result) {
-			// 		if(result.error()){
-			// 			console.error(result.error());
-			// 		}
-			// 		else{
-			// 			console.dir(result.data());
-			// 		}
-			// 	}
-			// );
-		});
+		BX24.init(function(){});
 	</script>
 
 	<!-- Helpers -->
