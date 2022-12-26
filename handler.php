@@ -10,12 +10,12 @@ writeToLog($_REQUEST, 'Log');
 if($_REQUEST["event"] == "ONCRMLEADADD"){
     $leadId = $_REQUEST["data"]["FIELDS"]["ID"];
     $leadData = $b24->leadGet($hook, $leadId);
-    writeToLog($leadData, 'Wook creado desde el Módulo de desarrolladores');
+    writeToLog($leadData, 'Hook creado desde el Módulo de desarrolladores');
 }elseif($_REQUEST["document_id"][1] == "CCrmDocumentLead"){
     $leadIdArr = explode("_", $_REQUEST["document_id"][2]);
     $leadId = $leadIdArr[1];
     $leadData = $b24->leadGet($hook, $leadId);
-    writeToLog($leadData, 'Wook creado desde un BP');
+    writeToLog($leadData, 'Hook creado desde un BP');
 }
 
 /**
