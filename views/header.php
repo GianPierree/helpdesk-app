@@ -28,12 +28,25 @@
                         <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-name">
                     </div>
                     <div class="input-group mb-3">
-                        <span class="input-group-text" id="inputGroup-sizing-contact">Contacto</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-contact">
+                        <span class="input-group-text" for="inputGroup-sizing-contact">Contacto</span>
+                        <select class="form-select" id="inputGroup-sizing-contact">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+
+                        <!-- <input type="text" id="contacts" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-contact"> -->
                     </div>
                     <div class="input-group mb-3">
-                        <span class="input-group-text" id="inputGroup-sizing-responsable">Responsable</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-responsable">
+                        <span class="input-group-text" for="inputGroup-sizing-responsable">Responsable</span>
+                        <select class="form-select" id="inputGroup-sizing-responsable">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <!-- <input type="text" id="users" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-responsable"> -->
                     </div>
                 </div>
                 <div class="modal-footer">
