@@ -1,3 +1,6 @@
+<?php 
+require_once("./config.php");
+?>
 <div id="header">
     <div class="row m-2">
         <div class="col text-end">
@@ -12,6 +15,12 @@
             </div>
         </div>
     </div>
+    <pre>
+        <?php
+        $contactData = $b24->contactList($hook);
+        echo print_r($contactData); 
+        ?>
+    </pre>
 
     <!-- Modal -->
     <div class="modal fade" id="crearTicket" tabindex="-1" aria-labelledby="crearTicketLabel" aria-hidden="true">
@@ -30,13 +39,8 @@
                     <div class="input-group mb-3">
                         <span class="input-group-text" for="inputGroup-sizing-contact">Contacto</span>
                         <select class="form-select" id="inputGroup-sizing-contact">
-                            <option selected>Choose...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            <option selected>Seleccionar...</option>
                         </select>
-
-                        <!-- <input type="text" id="contacts" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-contact"> -->
                     </div>
                     <div class="input-group mb-3">
                         <span class="input-group-text" for="inputGroup-sizing-responsable">Responsable</span>
@@ -46,7 +50,6 @@
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                         </select>
-                        <!-- <input type="text" id="users" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-responsable"> -->
                     </div>
                 </div>
                 <div class="modal-footer">
