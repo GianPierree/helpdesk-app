@@ -1,6 +1,7 @@
 <?php 
 require_once("./config.php");
 $contactData = $b24->contactList($hook);
+echo print_r($contactData);
 ?>
 <div id="header">
     <div class="row m-2">
@@ -35,15 +36,7 @@ $contactData = $b24->contactList($hook);
                         <span class="input-group-text" for="inputGroup-sizing-contact">Contacto</span>
                         <select class="form-select" id="inputGroup-sizing-contact">
                             <option selected>Seleccionar...</option>
-                            <?php
-                                for($i=0; $i < count($contactData["result"]); $i++){
-                                    $id = $contactData["result"][$i]["ID"];
-                                    $nombre = $contactData["result"][$i]["NAME"] + " " + $contactData["result"][$i]["LAST_NAME"];
-                                    ?>
-                                        <option value="<?php echo $id?>"><?php echo $nombre?></option>
-                                    <?php
-                                }
-                            ?>
+                            
                         </select>
                     </div>
                     <div class="input-group mb-3">
