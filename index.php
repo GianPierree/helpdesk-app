@@ -14,11 +14,9 @@
 <body>
 	<div id="name">
 		<div id="header">
-			<div class="container">
-				<div class="row">
-					<div class="col align-self-end">
-						<button type="button" class="btn btn-primary">Crear ticket</button>
-					</div>
+			<div class="row">
+				<div class="col align-self-end">
+					<button type="button" class="btn btn-primary">Crear ticket</button>
 				</div>
 			</div>
 			<div class="row g-2">
