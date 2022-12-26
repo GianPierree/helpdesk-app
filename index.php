@@ -10,18 +10,19 @@
 	
 	<!-- Bootstrap -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 	<div id="name">
 		<p class="h1 m-2">Helpdesk:</p>
-		<!-- <br> -->
 		<div id="header">
 			<div class="row m-2">
 				<div class="col align-self-end">
-					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#crearTicket">Crear ticket</button>
+					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#crearTicket"><i class="fas fa-plus"></i> Crear ticket</button>
 				</div>
 			</div>
-			<!-- <br> -->
 			<div class="row g-2 m-2">
 				<div class="col">
 					<div class="form-floating">
