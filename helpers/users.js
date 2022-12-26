@@ -3,9 +3,9 @@ BX24.callMethod("user.get", { ACTIVE: true }, function (result) {
         console.error(result.error());
     } else {
         let select = "<option>Seleccionar</option>"
-        let result = result.data()
-        for (var key in result){
-            select += "<option value=" + result[key]["ID"] + ">" + result[key]["NAME"] + " " + result[key]["LAST_NAME"] + "</option>"
+        let res = result.data()
+        for (var key in res){
+            select += "<option value=" + res[key]["ID"] + ">" + res[key]["NAME"] + " " + res[key]["LAST_NAME"] + "</option>"
         }
         document.getElementById("inputGroup-sizing-responsable").innerHTML = select
         console.dir(result.data());
